@@ -12,11 +12,17 @@ const newUser = new User({
     email,
     password,
  });
+ 
+try {
+    await newUser.save();
+    res.json('Signup successful');
+} catch (error) {
+    // Handle the error here
+    res.status(500).json({ message: error.message });
+}
 
-await newUser.save();
-res.status(201).json('Signup successful');
+    
+ };
 
+ 
 
-
-
-};
