@@ -3,7 +3,7 @@
 
  
  // Connect to MongoDB
-  mongoose.connect("mongodb+srv://dailypeople:Akafakosi@dailypeople.rwxubqy.mongodb.net/dailypeople?retryWrites=true&w=majority")
+  mongoose.connect("mongodb+srv://daily_people:Akafakosi@mydailypeople.ucwrnzf.mongodb.net/daily_people?retryWrites=true&w=majority")
  .then(()=>{console.log("MongooDb is conneted");})
  .catch((err)=>{console.log(err);});
 
