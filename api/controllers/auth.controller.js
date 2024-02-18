@@ -1,8 +1,7 @@
 import User from '../models/user.model.js';
 import bcryptjs from 'bcryptjs';
 
-
-export const signup = async(req, res) => {
+export const signup = async(req, res , next) => {
     const { username, email, password } = req.body;
 
     if (
@@ -29,7 +28,7 @@ try {
     res.json('Signup successful');
 } catch (error) {
     // Handle the error here
-    res.status(500).json({ message: error.message });
+    next(error);
 }
 
     
