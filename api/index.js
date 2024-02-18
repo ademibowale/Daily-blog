@@ -1,9 +1,12 @@
  import  express from "express";
  import mongoose from "mongoose";
+  import dotenv from "dotenv";
+
+  dotenv.config();
 
  
  // Connect to MongoDB
-  mongoose.connect("mongodb+srv://daily_people:Akafakosi@mydailypeople.ucwrnzf.mongodb.net/daily_people?retryWrites=true&w=majority")
+  mongoose.connect(process.env.MONGO)
  .then(()=>{console.log("MongooDb is conneted");})
  .catch((err)=>{console.log(err);});
 
