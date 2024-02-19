@@ -17,12 +17,14 @@ function SignUp() {
          Hey there! Welcome to DiwuraEssential, join the community– 
          The social blog where real people talk about real life(and have a blast doing it!) ✨
          and everything in between!
-         Join the fun! DiwuraEssent: Where good vibes and great conversations flow.
-         You can signup with your email and password or with Google 
+         Join the fun! DiwuraEssential: Where good vibes and great conversations flow.
          </p>
-      </div>
+        </div>
+         
       {/* right side */}
       <div className=' flex-1'>
+      <h2 className='px-2 py-1 bg-gradient-to-r from-indigo-500
+         via-purple-500 to-pink-500 rounded-lg text-white '>Signup with your email and password or with Google</h2>
 <form className='flex flex-col gap-4'>
 <div>
 <Label value='Your Username'/>
