@@ -11,8 +11,8 @@ function Header() {
         <Navbar className='border-b-2'>
          <Link to="/" className='self-center whitespace-nowrape text-sm sm:text-xl 
          font-semibold dark:text-white'>
-         <spand className='px-2 py-1 bg-gradient-to-r from-indigo-500
-         via-purple-500 to-pink-500 rounded-lg text-white 'outline>DiwuraEssential's</spand>
+         <span className='px-2 py-1 bg-gradient-to-r from-indigo-500
+         via-purple-500 to-pink-500 rounded-lg text-white'outline ='true'>DiwuraEssential's</span>
          Blog
          </Link> 
          <form>
@@ -31,7 +31,7 @@ function Header() {
           </Button>
           <Link to='/sign-in'>
             <Button className='gradient-to-br from-purple-600 to-500 hover:bg-gradient-to-bl 
-            focus:ring-4 focus:outline-none focus:ring-blue-300' pill outline>
+            focus:ring-4 focus:outline-none focus:ring-blue-300' pill outline ='true'>
               Sign In 
             </Button>
           </Link>
