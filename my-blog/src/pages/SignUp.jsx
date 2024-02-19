@@ -9,7 +9,7 @@ function SignUp() {
       {/* left side */}
       <div className='flex-1'>
       <Link to="/" className='font-bold dark:text-white text-2xl'>
-         <spand className='px-2 py-1 bg-gradient-to-r from-indigo-500
+         <spand className='px-1 py-1 bg-gradient-to-r from-indigo-500
          via-purple-500 to-pink-500 rounded-lg text-white 'outline>DiwuraEssential's</spand>
          Blog
          </Link>

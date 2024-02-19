@@ -1,7 +1,6 @@
 import { Button, Navbar, TextInput } from 'flowbite-react'
 import {Link,useLocation} from 'react-router-dom'
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {FaMoon} from 'react-icons/fa'
 
@@ -32,7 +31,7 @@ function Header() {
           </Button>
           <Link to='/sign-in'>
             <Button className='gradient-to-br from-purple-600 to-500 hover:bg-gradient-to-bl 
-            focus:ring-4 focus:outline-none focus:ring-blue-300' pill>
+            focus:ring-4 focus:outline-none focus:ring-blue-300' pill outline>
               Sign In 
             </Button>
           </Link>
