@@ -28,9 +28,16 @@ export default function FooterCom() {
                 >
                   100 JS Projects
                 </Footer.Link>
-                
-                
-    </Footer>
+                <Footer.Link
+                  href='/about'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                 DiwuraEssential's Blog
+                </Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            </Footer>
   );
 }
 
