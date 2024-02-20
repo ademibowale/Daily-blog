@@ -1,6 +1,6 @@
 import { Footer } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-// import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsTwitter,BsDribbble, BsWhatsapp } from 'react-icons/bs';
 export default function FooterCom() {
   return (
     <Footer container className='border border-t-8 border-teal-500'>
@@ -26,7 +26,7 @@ export default function FooterCom() {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  100 JS Projects
+                  Relationship Talks
                 </Footer.Link>
                 <Footer.Link
                   href='/about'
@@ -70,7 +70,7 @@ export default function FooterCom() {
             <Footer.Icon href='#' icon={BsFacebook}/>
             <Footer.Icon href='#' icon={BsInstagram}/>
             <Footer.Icon href='#' icon={BsTwitter}/>
-            <Footer.Icon href='https://github.com/' icon={BsGithub}/>
+            <Footer.Icon href='#' icon={BsWhatsapp}/>
             <Footer.Icon href='#' icon={BsDribbble}/>
 
           </div>
