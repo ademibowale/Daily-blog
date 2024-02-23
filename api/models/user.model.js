@@ -18,7 +18,16 @@ const userSchema = new mongoose.Schema({
         required: true,
         min: 6
     },
-},({timestamps: true}));
+
+  profilePictures:{
+    type:string,
+    default:'https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100350/33865095-businessman-profile-icon-male-portrait-flat.jpg'
+  }
+
+
+},
+
+({timestamps: true}));
 
 const User = mongoose.model("User", userSchema);
 
