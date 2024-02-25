@@ -11,6 +11,7 @@ import { app } from "../firebase";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
+
 function DashProfile() {
   const { currentUser } = useSelector((state) => state.user);
   const [imageFile, setImageFile] = useState(null);
@@ -44,7 +45,8 @@ function DashProfile() {
     //       }
     //     }
     //   }
-    setImageFileUploading(true);
+
+    // setImageFileUploading(true);
     setImageFileUploadError(null);
     const storage = getStorage(app);
     const fileName = new Date().getTime() + imageFile.name;
@@ -66,14 +68,14 @@ function DashProfile() {
         setImageFileUploadProgress(null);
         setImageFile(null);
         setImageFileUrl(null);
-        setImageFileUploading(false);
+        // setImageFileUploading(false);
       },
 
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
           setImageFileUrl(downloadURL);
-          setFormData({ ...formData, profilePicture: downloadURL });
-          setImageFileUploading(false);
+          // setFormData({ ...formData, profilePicture: downloadURL });
+          // setImageFileUploading(false);
         });
       }
     );
