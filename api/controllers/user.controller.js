@@ -61,4 +61,17 @@ res.status(200).json(others);
     } catch (error) {
       next(error);
     }
-  } // Add this closing curly brace
+  } ;
+  
+  const signout = (req, res,next) => {
+    try {
+      res.clearCookie('access_token').status(200).json({ message: 'Signout successfully' });
+
+    } catch (error) {
+      next(error);
+    }
+  }
+
+
+
+
