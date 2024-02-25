@@ -30,8 +30,10 @@ if (req.body.username !== req.body.username.toLowerCase())
   return next(errorHandler(400, 'Username must be lowercase'));
 
 if (!req.body.username.match(/^[a-zA-Z0-9]+$/)) {
-  return next(errorHandler(400, 'Username must contain only letters and numbers'));
+  return next(errorHandler
+    (400, 'Username must contain only letters and numbers'));
   }
+}
 try {
  const updatedUser = await User.findByIdAndUpdate
  (req.params.userId,{
@@ -49,4 +51,14 @@ res.status(200).json(others);
  next(err);
 }}
 };
-}
+ export const  deleteUser=async (req,res,next)=>{
+    if (req.user.Id !== req.params.userid) {
+      return next(errorHandler(403, 'You are not allowed to delete this user'));
+    }
+    try {
+      await User.findByIdAndDelete(req.params.userId);
+      res.status(200).json({ message: 'User has been deleted' });
+    } catch (error) {
+      next(error);
+    }
+  } // Add this closing curly brace
