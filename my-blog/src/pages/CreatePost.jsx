@@ -20,8 +20,34 @@ const handleUpdloadImage = async () => {
       return;
   }
   const storage = getStorage(app);
-
-
+  const fileName = new Date().getTime() + '-' + file.name;
+  const storageRef = ref(storage, fileName);
+  const uploadTask = uploadBytesResumable(storageRef, file);
+  uploadTask.on(
+    'state_changed',
+    (snapshot) => {
+      const progress =
+        (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      setImageUploadProgress(progress.toFixed(0));
+    },
+    (error) => {
+      setImageUploadError('Image upload failed');
+      setImageUploadProgress(null);
+    },
+   
+      () => {
+        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+          setImageUploadProgress(null);
+          setImageUploadError(null);
+          setFormData({ ...formData, image: downloadURL });
+        });
+      }
+    );
+  } catch (error) {
+    setImageUploadError('Image upload failed');
+    setImageUploadProgress(null);
+    console.log(error);
+  }
 
 };
 
