@@ -1,9 +1,33 @@
 import { Button, FileInput, Select, TextInput } from 'flowbite-react'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import {
+  getDownloadURL,
+  getStorage,
+  ref,
+  uploadBytesResumable,
+} from 'firebase/storage';  
 
 function CreatePost() {
-  return (
+
+const [file,setFile]=useState(null)
+
+const handleUpdloadImage = async () => {
+  try{
+
+    if (!file) {
+      setImageUploadError('Please select an image');
+      return;
+  }
+  const storage = getStorage(app);
+
+
+
+};
+
+
+
+return (
     <div className='p-3 mx-w-3xl mx-auto min-h-screen'>
       <h1 className='text-center text-3xl my-7 font-semibold'>
         Create Post</h1>
@@ -29,8 +53,13 @@ function CreatePost() {
            </Select>
         </div>
  <div className='flex gap-4 items-center justify-between bolder-4 bolder-teal-500 bolder-dotted p-3'>
-    <FileInput type='file' accept='image/*'/>
-    <Button type='button'gradientDuoTone='purpleToBlue' size='sm' outline>
+    <FileInput type='file' accept='image/*' onChange={(e)=>
+    setFile(e.target.file[0])}/>
+    <Button 
+    type='button'
+    gradientDuoTone='purpleToBlue' 
+    size='sm' 
+    outline onClick={handUploadImage}>
     Upload image    
     </Button>
     </div>
