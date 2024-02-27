@@ -8,7 +8,10 @@ import { Modal, Table, Button } from 'flowbite-react';
 
 function DashPosts() {
     const { currentUser } = useSelector((state) => state.user);
-
+    const [userPosts, setUserPosts] = useState([]);
+    const [showMore, setShowMore] = useState(true);
+    const [showModal, setShowModal] = useState(false);
+    const [postIdToDelete, setPostIdToDelete] = useState('');
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -22,6 +25,33 @@ function DashPosts() {
                   }
                 }        
         }
+        catch (error) {
+          console.log(error.message);
+        }
+      };
+      const handleDeletePost = async () => {
+        setShowModal(false);
+        try {
+          const res = await fetch(
+            `/api/post/deletepost/${postIdToDelete}/${currentUser._id}`,
+            {
+              method: 'DELETE',
+            }
+          );
+          
+          const data = await res.json();
+      if (!res.ok) {
+        console.log(data.message);
+      } else {
+        setUserPosts((prev) =>
+          prev.filter((post) => post._id !== postIdToDelete)
+        );
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   return (
     <div>
       {currentUser.isAdmin && userPosts.length>0?
