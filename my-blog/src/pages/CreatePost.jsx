@@ -89,11 +89,15 @@ return (
     <div className='p-3 mx-w-3xl mx-auto min-h-screen'>
       <h1 className='text-center text-3xl my-7 font-semibold'>
         Create Post</h1>
-    <form className='flex flex-col gap-4'>
+    <form className='flex flex-col gap-4' onClick={handleSubmit}>
         <div className='flex flex-col gap-4 sm:flex-row justify-between'>
-            <TextInput type='text' placeholder='Text' required id ='title'
-            className='flex-1'/>
-            <Select>
+            <TextInput type='text'
+             placeholder='Text'
+              required id ='title'
+            className='flex-1'
+            onChange={(e)=>
+            setFormData({ ...formData,title: e.target.value})}/>
+            <Select onChange={(e)=>setFormData({...formData,category:e.target,value})}>
                 <option value='uncategorized'>Selecta category</option>
                 <option value='food&beverages'>Food & Beverages</option>
                 <option value='entertainment '>Entertainment</option>
@@ -121,8 +125,21 @@ return (
     Upload image    
     </Button>
     </div>
-    <ReactQuill theme='snow' placeholder='write something...' className='h-72 mb-12'/>
+    <ReactQuill 
+   theme='snow'
+   placeholder='Write something...'
+   className='h-72 mb-12'
+   required
+   onChange={(value) => {
+     setFormData({ ...formData, content: value });
+   }}
+ />
     <Button type='submit' gradientDuoTone='purpleToPick'>Publish</Button>
+    {publishError && (
+          <Alert className='mt-5' color='failure'>
+            {publishError}
+          </Alert>
+        )}
     </form>
     </div>
   )
