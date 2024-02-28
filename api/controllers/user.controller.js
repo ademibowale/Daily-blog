@@ -52,7 +52,7 @@ res.status(200).json(others);
 }}
 };
  export const  deleteUser=async (req,res,next)=>{
-    if (req.user.Id !== req.params.userid) {
+    if (!req.user.isAdmin && req.user.Id !== req.params.userid) {
       return next(errorHandler(403, 'You are not allowed to delete this user'));
     }
     try {
