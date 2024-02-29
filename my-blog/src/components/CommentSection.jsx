@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; // Added missing import statements
+ import React, { useState, useEffect } from 'react'; 
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import Comment from './Comment';
