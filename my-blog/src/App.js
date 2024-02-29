@@ -27,7 +27,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
-        {/* <Route path='/search' element={<Search />} /> */}
+       <Route path='/search' element={<Search />} />
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
         </Route>
@@ -37,8 +37,7 @@ function App() {
         </Route>
         <Route path='/projects' element={<Projects />} />
         <Route path='/post/:postSlug' element={<PostPage/>} />
-        {/* <Route path='/post/:postSlug' element={<PostPage />} /> */}
-      </Routes>
+       </Routes>
     <Footer/>
     </BrowserRouter>
   );

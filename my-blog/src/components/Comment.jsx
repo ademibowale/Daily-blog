@@ -1,13 +1,17 @@
 import React from 'react'
-import moment from 'moment';
+// import moment from 'moment';
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux'; // Add missing import statement
+import { Button, Textarea } from 'flowbite-react';
 
-function Comment() {
-    { comment, onLike, onEdit, onDelete }) {
-    const [user, setUser] = useState({});
+import { FaThumbsUp } from 'react-icons/fa'; // Add missing import statement
+
+function Comment({ comment, onLike, onEdit, onDelete }) {
+  const [user, setUser] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(comment.content);
   const { currentUser } = useSelector((state) => state.user);
+  
   useEffect(() => {
     const getUser = async () => {
       try {
@@ -22,32 +26,33 @@ function Comment() {
     };
 
     getUser();
-}, [comment]);
+  }, [comment]);
 
-const handleEdit = () => {
-  setIsEditing(true);
-  setEditedContent(comment.content);
-};
+  const handleEdit = () => {
+    setIsEditing(true);
+    setEditedContent(comment.content);
+  };
 
-const handleSave = async () => {
-  try {
-    const res = await fetch(`/api/comment/editComment/${comment._id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
+  const handleSave = async () => {
+    try {
+      const res = await fetch(`/api/comment/editComment/${comment._id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
-            content: editedContent,
-          }),
-        });
-        if (res.ok) {
-          setIsEditing(false);
-          onEdit(comment, editedContent);
-        }
-      } catch (error) {
-        console.log(error.message);
+          content: editedContent,
+        }),
+      });
+      if (res.ok) {
+        setIsEditing(false);
+        onEdit(comment, editedContent);
       }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
-    },
   return (
     <div className='flex p-4 border-b dark:border-gray-600 text-sm'>
       <div className='flex-shrink-0 mr-3'>
@@ -63,12 +68,12 @@ const handleSave = async () => {
             {user ? `@${user.username}` : 'anonymous user'}
           </span>
           <span className='text-gray-500 text-xs'>
-            {moment(comment.createdAt).fromNow()}
+            {/* {moment(comment.createdAt).fromNow()} */}
           </span>
         </div>
         {isEditing ? (
           <>
-          <Textarea
+            <Textarea
               className='mb-2'
               value={editedContent}
               onChange={(e) => setEditedContent(e.target.value)}
@@ -93,29 +98,28 @@ const handleSave = async () => {
               </Button>
             </div>
           </>
-
-) : (
-    <>
-      <p className='text-gray-500 pb-2'>{comment.content}</p>
-      <div className='flex items-center pt-2 text-xs border-t dark:border-gray-700 max-w-fit gap-2'>
-        <button
-          type='button'
-          onClick={() => onLike(comment._id)}
-          className={`text-gray-400 hover:text-blue-500 ${
-            currentUser &&
-            comment.likes.includes(currentUser._id) &&
-            '!text-blue-500'
-          }`}
-        >
-          <FaThumbsUp className='text-sm' />
-        </button>
-        <p className='text-gray-400'>
-          {comment.numberOfLikes > 0 &&
-            comment.numberOfLikes +
-              ' ' +
-              (comment.numberOfLikes === 1 ? 'like' : 'likes')}
-        </p>
-        {currentUser &&
+        ) : (
+          <>
+            <p className='text-gray-500 pb-2'>{comment.content}</p>
+            <div className='flex items-center pt-2 text-xs border-t dark:border-gray-700 max-w-fit gap-2'>
+              <button
+                type='button'
+                onClick={() => onLike(comment._id)}
+                className={`text-gray-400 hover:text-blue-500 ${
+                  currentUser &&
+                  comment.likes.includes(currentUser._id) &&
+                  '!text-blue-500'
+                }`}
+              >
+                <FaThumbsUp className='text-sm' />
+              </button>
+              <p className='text-gray-400'>
+                {comment.numberOfLikes > 0 &&
+                  comment.numberOfLikes +
+                    ' ' +
+                    (comment.numberOfLikes === 1 ? 'like' : 'likes')}
+              </p>
+              {currentUser &&
                 (currentUser._id === comment.userId || currentUser.isAdmin) && (
                   <>
                     <button
@@ -132,7 +136,7 @@ const handleSave = async () => {
                     >
                       Delete
                     </button>
-                    </>
+                  </>
                 )}
             </div>
           </>
