@@ -1,17 +1,14 @@
-import React from 'react'
-// import moment from 'moment';
+import moment from 'moment';
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux'; // Add missing import statement
+import { FaThumbsUp } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 import { Button, Textarea } from 'flowbite-react';
 
-import { FaThumbsUp } from 'react-icons/fa'; // Add missing import statement
-
-function Comment({ comment, onLike, onEdit, onDelete }) {
+export default function Comment({ comment, onLike, onEdit, onDelete }) {
   const [user, setUser] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(comment.content);
   const { currentUser } = useSelector((state) => state.user);
-  
   useEffect(() => {
     const getUser = async () => {
       try {
@@ -24,7 +21,6 @@ function Comment({ comment, onLike, onEdit, onDelete }) {
         console.log(error.message);
       }
     };
-
     getUser();
   }, [comment]);
 
@@ -52,14 +48,13 @@ function Comment({ comment, onLike, onEdit, onDelete }) {
       console.log(error.message);
     }
   };
-
   return (
     <div className='flex p-4 border-b dark:border-gray-600 text-sm'>
       <div className='flex-shrink-0 mr-3'>
         <img
           className='w-10 h-10 rounded-full bg-gray-200'
-          src={user.profilePicture}
-          alt={user.username}
+          src={user ? user.profilePicture : ''}
+          alt={user ? user.username : 'anonymous user'}
         />
       </div>
       <div className='flex-1'>
@@ -68,7 +63,7 @@ function Comment({ comment, onLike, onEdit, onDelete }) {
             {user ? `@${user.username}` : 'anonymous user'}
           </span>
           <span className='text-gray-500 text-xs'>
-            {/* {moment(comment.createdAt).fromNow()} */}
+            {moment(comment.createdAt).fromNow()}
           </span>
         </div>
         {isEditing ? (
@@ -145,5 +140,3 @@ function Comment({ comment, onLike, onEdit, onDelete }) {
     </div>
   );
 }
-
-export default Comment

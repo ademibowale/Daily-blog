@@ -1,14 +1,15 @@
-import React from 'react';
 import { Modal, Table, Button } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
+import { FaCheck, FaTimes } from 'react-icons/fa';
 
-function DashComments() {
+export default function DashComments() {
   const { currentUser } = useSelector((state) => state.user);
   const [comments, setComments] = useState([]);
   const [showMore, setShowMore] = useState(true);
-
+  const [showModal, setShowModal] = useState(false);
+  const [commentIdToDelete, setCommentIdToDelete] = useState('');
   useEffect(() => {
     const fetchComments = async () => {
       try {
@@ -24,7 +25,6 @@ function DashComments() {
         console.log(error.message);
       }
     };
-
     if (currentUser.isAdmin) {
       fetchComments();
     }
@@ -42,6 +42,29 @@ function DashComments() {
         if (data.comments.length < 9) {
           setShowMore(false);
         }
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const handleDeleteComment = async () => {
+    setShowModal(false);
+    try {
+      const res = await fetch(
+        `/api/comment/deleteComment/${commentIdToDelete}`,
+        {
+          method: 'DELETE',
+        }
+      );
+      const data = await res.json();
+      if (res.ok) {
+        setComments((prev) =>
+          prev.filter((comment) => comment._id !== commentIdToDelete)
+        );
+        setShowModal(false);
+      } else {
+        console.log(data.message);
       }
     } catch (error) {
       console.log(error.message);
@@ -98,7 +121,6 @@ function DashComments() {
       ) : (
         <p>You have no comments yet!</p>
       )}
-
       <Modal
         show={showModal}
         onClose={() => setShowModal(false)}
@@ -126,5 +148,3 @@ function DashComments() {
     </div>
   );
 }
-
-export default DashComments;
