@@ -103,9 +103,15 @@ export default function CreatePost() {
             }
           >
            <option value='uncategorized'>Select a category</option>
-            <option value='entertainment'>Entertainment</option>
+            <option value='gistlover'>GistLover</option>
             <option value='relationship talks'>Relationship Talks</option>
-            <option value='comedy'>comedy</option>
+            <option value='sport'>Sport</option>
+            <option value='nollywood'>Nollywood</option>
+            <option value='celebrities gist'>Celebrities Gist</option>
+            <option value='rant people'>Rant People</option>
+            <option value='joke'>Jokes</option>
+            <option value='comedy'>Comedy</option>
+            <option value='health care'>Health Care</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
