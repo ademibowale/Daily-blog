@@ -4,7 +4,6 @@ import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import Projects from "./pages/Projects";
 import Header from "./components/Header";
 import PrivateRoute from './components/PrivateRoute';
 import Footer from "./components/Footer";
@@ -14,6 +13,7 @@ import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
+import Entertainment from "./pages/Entertainment";
 
 
 
@@ -35,7 +35,7 @@ function App() {
           <Route path='/create-post' element={<CreatePost />} />
           <Route path='/update-post/:postId' element={<UpdatePost />} /> 
         </Route>
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/entertainment' element={<Entertainment />} />
         <Route path='/post/:postSlug' element={<PostPage/>} />
        </Routes>
     <Footer/>

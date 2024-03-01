@@ -116,9 +116,9 @@ function Header() {
               </Link>
             </Navbar.Link>
     
-            <Navbar.Link active={path==="/projects"} as={'div'}>
-              <Link to="/projects">
-                Projects
+            <Navbar.Link active={path==="/entertainment"} as={'div'}>
+              <Link to="/entertainment">
+                Entertainment News
               </Link>
             </Navbar.Link>
                
