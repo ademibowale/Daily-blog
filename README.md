@@ -46,7 +46,7 @@
 
 Access the the online version of my application with this link
 
-- [Live Demo Link](https://dailypeople-blog.onrender.com)
+- [Live Demo Link](https://dailypeople-blog.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
