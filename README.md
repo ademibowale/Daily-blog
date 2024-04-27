@@ -42,9 +42,9 @@ This is designed to be a space for exploration and expression.  Whether you're a
 > 
 
 <details>
-  <summary></summary>
+  <summary>React Vite</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+    <li><a href="https://react vit.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -56,16 +56,9 @@ This is designed to be a space for exploration and expression.  Whether you're a
 </details>
 
 <details>
-<summary>Stripe</summary>
+<summary>MongoDB</summary>
   <ul>
-    <li><a href="https://www.stripe.com">Stripe</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>webhook</summary>
-  <ul>
-    <li><a href="https://www.stripe/webhooks/">Webhooks</a></li>
+    <li><a href="https://www.mongodb.com">Webhooks</a></li>
   </ul>
 </details>
 
@@ -91,7 +84,7 @@ This is designed to be a space for exploration and expression.  Whether you're a
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Soon](https://google.com)
+- [Screenshot](https://google.com)
 
 - [ ] ![chrome-capture-2024-3-27 (1)](https://github.com/ademibowale/Daily-Blog/assets/92458236/94165f2f-3616-4726-8873-482624e79e7a)
 
@@ -109,9 +102,7 @@ This is designed to be a space for exploration and expression.  Whether you're a
 - [LIVE DEMO](https://dailypeople-blog.onrender.com/)
 
 
-## 🚀 Live Demo 2 <a name="live-demo"></a>
 
-- [Video Presentation 2]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
