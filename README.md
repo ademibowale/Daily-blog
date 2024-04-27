@@ -1,4 +1,4 @@
-![chrome-capture-2024-3-27](https://github.com/ademibowale/Daily-Blog/assets/92458236/e2355f6a-3eb6-4deb-bc95-9580a0b4efcb)<a name="readme-top"></a>
+<a name="readme-top"></a>
 <div align="center">
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
@@ -33,9 +33,9 @@
 
 > 
 **[Daily_People_Store ]** 
-This is my new ecommerce website digital storefront on the internet. It facilitates the transaction between a buyer and seller. It is the virtual space where sellers showcase products, and online customers make selections  i build this app with ruby on rails and tailwinds css technology with stripe and webhooks for the payment gatelink .
+This is designed to be a space for exploration and expression.  Whether you're a seasoned writer or just starting out, this platform welcomes a variety of perspectives and topics.  Here, you can find engaging content on healthcare,Relationship talks,entertainment news e.t.c   
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with">This blog is powered by React Vite  and MongoDB, a robust web development framework known for its efficiency and scalability.  This ensures a smooth and user-friendly experience for both readers and writers.</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
