@@ -29,7 +29,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Daily people blog app] <a name="about-project"></a>
 
 > 
 **[Daily_People_Store ]** 
