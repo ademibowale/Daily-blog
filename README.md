@@ -1,119 +1,172 @@
- 📗 Table of Contents
+![chrome-capture-2024-3-27](https://github.com/ademibowale/Daily-Blog/assets/92458236/e2355f6a-3eb6-4deb-bc95-9580a0b4efcb)<a name="readme-top"></a>
+<div align="center">
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Leader-board ](#-portfolio--)
-  - [Frontend](#Frontend)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+  <h3><b>Microverse README Template</b></h3>
 
-# 📖 Portfolio Project <a name="about-project"></a>
+</div>
 
-**Porfolio** The is my great blog app for social interaction user can login and signup or with google only the admin can post user can comment and likes posts .
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
+
+# 📖 [your_project_name] <a name="about-project"></a>
+
+> 
+**[Daily_People_Store ]** 
+This is my new ecommerce website digital storefront on the internet. It facilitates the transaction between a buyer and seller. It is the virtual space where sellers showcase products, and online customers make selections  i build this app with ruby on rails and tailwinds css technology with stripe and webhooks for the payment gatelink .
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
+> 
+
 <details>
-  <summary>Client</summary>
+  <summary></summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://reactjs.org/">Tailwinds</a></li>
-    <li><a href="https://nodejs.org/en/">Node-JS</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">MongoDB</a></li>
-    <li><a href="#">React js</a></li>
-    <li><a href="https://www.jslint.com/">jslint</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
+<details>
+  <summary>TailsWind</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">TailWind CSS</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Stripe</summary>
+  <ul>
+    <li><a href="https://www.stripe.com">Stripe</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>webhook</summary>
+  <ul>
+    <li><a href="https://www.stripe/webhooks/">Webhooks</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+
+
+### Key Features <a name="key-features"></a>
+
+ Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Access the the online version of my application with this link
+- [Soon](https://google.com)
 
-- [Live Demo Link](https://dailypeople-blog.onrender.com/)
+- [ ] ![chrome-capture-2024-3-27 (1)](https://github.com/ademibowale/Daily-Blog/assets/92458236/94165f2f-3616-4726-8873-482624e79e7a)
+
+- [ ] ![chrome-capture-2024-3-27](https://github.com/ademibowale/Daily-Blog/assets/92458236/83bb03c8-16c8-423f-b7d6-c0d60937b64b)
+
+- [ ] ![image](https://github.com/ademibowale/Daily-Blog/assets/92458236/d3c04bd1-9616-43d4-a4e0-80c4ecdb997b)
+
+- [ ] ![chrome-capture-2024-3-27 (2)](https://github.com/ademibowale/Daily-Blog/assets/92458236/36a254fe-4105-4909-9377-e8d35ae61725)
+
+
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [LIVE DEMO](https://dailypeople-blog.onrender.com/)
+
+
+## 🚀 Live Demo 2 <a name="live-demo"></a>
+
+- [Video Presentation 2]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+
 To get a local copy up and running, follow these steps.
-
-## Setup
-
- If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
-
-[Download the ZIP from this location](https://github.com/ademibowale/Leader-Board/archive/refs/heads/development.zip), or run the following [git](https://github.com/ademibowale/Leader-Board.git) command to clone the files to your machine:
-
-- Once the files are on your machine, open the _leaderboard_ folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
-
 
 ### Prerequisites
 
 In order to run this project you need:
 
-# 🛠 Installation & Set Up
+### Setup
 
-1. Install Node Modules
+Clone this repository to your desired folder:
 
 ```sh
-   npx install
-   ```
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
 
-   ```sh
-   npx tailwindcss -i ./src/index.css -o ./public/output.css --watch
-   ```
 
-2. Start the development server
+### Install
 
-   ```sh
-   npm start
+Install this project with:
 
-   ```
+```sh
+  cd my-project
+  gem install
+```
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## 🚀 Building and Running for Production
-
-1. Generate a full static production build
-
-   ```sh
-   npm run build
-   ```
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  npm run dev
+  yarn start
 ```
 
-### Deployment
 
-You can deploy this project using:
+### Run tests
+
+To run tests, run the following command:
+
 
 ```sh
-  git push development
+  bin/rails test test/models/article_test.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="author"></a>
+
+
+## 👥 Authors <a name="authors"></a>
+
 
 ## Author
 
@@ -124,33 +177,17 @@ You can deploy this project using:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/adebowale-adegboye-143568221/)
 
 
- ### Contact Me [LinkedIn](https://www.linkedin.com/in/tech-adebowale-adegboye/) or [Email](ademibowaleadegboye@gmail.com)
-  ### Check out my other Apps
-   
-   <!-- === ⭐ PORTFOLIO LINE START ⭐ === -->
 
-| Author                  | Screenshot                                                                                                                                                                | Live URL                                                                            | Repo                                                                     | Tech Stack                                                                                        |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| ADEBOWALE ADEGBOYE            | ![Screenshot](https://user-images.githubusercontent.com/92458236/215344329-a70f50fb-563b-4615-a17e-3b9ca9361181.png)                                                   | [ademibowale.com](https://ademibowale-professional-portfolio.netlify.app/)                                              | [GitHub](https://github.com/ademibowale/Professional-Portfolio-Project)                                | React js, Tailwinds,JavaScript,                                                                             |
-| ADEBOWALE ADEGBOYE           | ![covid_19_app](https://user-images.githubusercontent.com/92458236/215344980-ad25685d-b3dd-4ff4-b6fe-a4b52707c5ee.png)                                                   | [Corona-virus](https://corona-virus-pandemic.netlify.app/)                                            | [GitHub](https://github.com/ademibowale/Covid-19-tracker)                   | React, CSS,Redux                                               |
-| ADEBOWALE ADEGBOYE         | ![Screenshot (36)](https://user-images.githubusercontent.com/92458236/215345621-43efe6c3-7171-4a71-b36b-0eda91c7e2bd.png)                                                 | [Bookstore](https://bookstore-cms-books.netlify.app/)                                    | [GitHub](https://github.com/ademibowale/CM_Bookstore)                                 | React, Gatsby, Styled-components                                                                  |
-| ADEBOWALE ADEGBOYE           | ![Screenshot (37)](https://user-images.githubusercontent.com/92458236/215345703-f9b86199-98f5-4fd4-a350-1ed84dd605db.png)                                                   | [Tesla Clone](https://tesla-clone-ey2n-lczk9quc6-ademibowale.vercel.app/)                                       | [GitHub](https://github.com/ademibowale/Tesla-clone)               | React, Tailwindcss,                                      |
-| ADEBOWALE ADEGBOYE & Nickemma            | ![free_game](https://user-images.githubusercontent.com/92458236/215346168-fa523c93-ac92-45a5-b0c2-f2631a122414.png)                                                   | [Group project](https://nickemma.github.io/capstone-project-kanban/)                                          | [GitHub](https://github.com/ademibowale/capstone-project-kanban)                 | React,, CSS, Netlify, NodeJS ,API          |
-| ADEBOWALE ADEGBOYE            | ![entainment_page](https://user-images.githubusercontent.com/92458236/215346627-8c953149-df00-4671-9f30-f4b0aaa3b86c.png)                                                   | [Entertainment Page](https://ademibowale.github.io/Capstone_projects/)                                          | [GitHub](https://github.com/ademibowale/Capstone_projects)                 | React,, CSS, Netlify, NodeJS ,API          |
-
-
-If you like this project and want to give back, consider buying me a coffee. I'll appreciate every cup. ☕
-
-<a href="https://buymeacoffee.com/evavic44">
-  <img width="170px" alt="bmc-button" src="https://user-images.githubusercontent.com/62628408/163418953-1d32bf9c-317b-44ca-b773-44e36140fc9d.png">
-</a>
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will add a feature for a new project.**
-- [ ] **I will add some animations.**
+Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,21 +195,41 @@ If you like this project and want to give back, consider buying me a coffee. I'l
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ademibowale/Leader-Board/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project consider giving it a star ⭐️.
+Write a message to encourage readers to support your project
+
+If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+ACKNOWLEDGEMENTS -->
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for giving me the opportunity to work on this project.
+ Give credit to everyone who inspired your codebase.
 
-- Coding Partners
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+ FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,5 +237,6 @@ I would like to thank Microverse for giving me the opportunity to work on this p
 
 This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
